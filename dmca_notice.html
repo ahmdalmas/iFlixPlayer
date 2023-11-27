@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - iFlix Player Bootstrap Template</title>
+  <title>Copyright Claim</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,6 +26,7 @@
   <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/download_button.css" rel="stylesheet">
+  <link href="assets/css/notice.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iFlix Player
@@ -69,23 +70,72 @@
     <section class="breadcrumbs">
       <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
-          </ol>
-        </div>
+        
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page pt-4">
+    <section class="inner-page py-4">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+        <div class="basnnmer-overlay">
+          <div class="testbox box">
+            <form action="/">
+              <h1>Copyright Claim</h1>
+              <div class="item">
+                <p>Your name</p>
+                <div>
+                  <input type="text" name="name" placeholder="First" />
+                  <input type="text" name="name" placeholder="Last" />
+                </div>
+              </div>
+              <div class="item">
+                <p>Your email</p>
+                <input type="text" name="name" />
+              </div>
+              <div class="item">
+                <p>Date of complaint</p>
+                <input type="date" name="name" required />
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <div class="item">
+                <p>Your department</p>
+                <select>
+                  <option value="">*Please select*</option>
+                  <option value="A">Department A</option>
+                  <option value="B">Department B</option>
+                  <option value="C">Department C</option>
+                  <option value="D">Department D</option>
+                  <option value="E">Department E</option>
+                </select>
+              </div>
+              <div class="item">
+                <p>Office manager name</p>
+                <input type="text" name="name" />
+              </div>
+              <div class="item">
+                <p>The person(s) involved in this complaint are</p>
+                <textarea rows="5"></textarea>
+              </div>
+              <div class="item">
+                <p>Note all relevant dates, places, events, etc. pertaining to the complaint</p>
+                <textarea rows="5"></textarea>
+              </div>
+              <div class="item">
+                <p>Signature</p>
+                <textarea rows="5"></textarea>
+              </div>
+              <div class="btn-block">
+                <button type="submit" href="/">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="feature section-padding" data-scroll-index='0'>
+      
+      <!-- <span class="svg-wave"> <img class="svg-hero" src="assets/images/applight-wave.svg"> </span> -->
     </section>
 
   </main><!-- End #main -->

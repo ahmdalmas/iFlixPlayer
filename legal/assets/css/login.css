@@ -117,7 +117,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: linear-gradient(to top, #76b852, #8DC26F);
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   h1 {
@@ -127,7 +127,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-weight: 100;
     text-transform: capitalize;
     letter-spacing: 4px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   /*-- main --*/
@@ -163,7 +163,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background-size: 100%;
     background-repeat: no-repeat;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   input.email, input.text.w3lpass {

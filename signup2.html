@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - iFlix Player Bootstrap Template</title>
+  <title>Sign Up</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,7 +14,12 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -24,7 +29,10 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/login2.css" rel="stylesheet">
+  <link href="assets/css/app.css" rel="stylesheet">
+  <link href="assets/css/rt-plugins.css" rel="stylesheet">
   <link href="assets/css/download_button.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -40,6 +48,18 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
+    <div id="navbar" class="navbar">
+      <ul class="d-lg-none">
+        <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+        <!-- <li><a class="nav-link scrollto" href="#">Downloads</a></li> -->
+        <li><a href="legal/terms.html">Terms and Conditions</a></li>
+        <li><a href="legal/dmca.html">DMCA</a></li>
+        <li><a href="legal/privacy_policy.html">Privacy Policy</a></li>
+        </li> 
+        <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </div><!-- .navbar -->
     <div class="container d-flex align-items-center justify-content-between">
 
       <div id="logo">
@@ -51,40 +71,210 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#">Downloads</a></li>
-          <li><a class="nav-link scrollto" href="#about-us">Terms</a></li>
-          <li><a class="nav-link scrollto" href="#about-us">DMCA</a></li>
-          <li><a class="nav-link scrollto" href="#about-us">Privacy Policy</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#">Downloads</a></li> -->
+          <li><a href="legal/terms.html">Terms and Conditions</a></li>
+          <li><a href="legal/dmca.html">DMCA</a></li>
+          <li><a href="legal/privacy_policy.html">Privacy Policy</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
+    <div class="px-2"><a href="signup2.html" class="btn-get-started-border scrollto">Downloads</a></div>
   </header><!-- End Header -->
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
+    <section class="inner-page pt-5">
       <div class="container">
+        <!-- main -->
+        <div class="main-w3layouts wrapper" id="login-form" style="display: none;">
+          <div class="main-agileinfo">
+            <div class="loginwrapper">
+              <div class="lg-inner-column">
+                <div class="left-column relative z-[1]">
+                  <div class="max-w-[520px] pt-20 ltr:pl-20 rtl:pr-20">
+                    <h4>
+                      Unlock your Project
+                      <span class="text-slate-800 dark:text-slate-400 font-bold">
+                        performance
+                      </span>
+                    </h4>
+                  </div>
+                </div>
+                <div class="right-column  relative">
+                  <div class="inner-content h-full flex flex-col dark:bg-slate-800">
+                    <div class="auth-box h-full flex flex-col justify-center">
+                      <div class="text-center 2xl:mb-10 mb-4">
+                        <h4 class="font-medium">Sign in</h4>
+                        <div class="text-slate-500 text-base">
+                          Sign in to your account to start using Dashcode
+                        </div>
+                      </div>
+                      <!-- BEGIN: Login Form -->
+                      <div class=" agileits-top">
+                        <form action="#" method="post">
+                          <div class="group">
+                            <input class="text botMar" id="username" type="text" name="Username" placeholder=""
+                              required="">
+                            <label for="username">Username</label>
+                          </div>
+                          <div class="group">
+                            <input class="text botMar" id="pass1" type="password" name="password" placeholder=""
+                              required="">
+                            <i class="show_pass bi bi-eye" onclick="showPass()"></i>
+                            <label for="pass1">Password</label>
+                          </div>
+                          <div class="wthree-text">
+                            <label class="anim">
+                              <input type="checkbox" class="checkbox" required="">
+                              <span>I Agree To The Terms & Conditions</span>
+                            </label>
+                            <div class="clear"> </div>
+                          </div>
+                          <div class="wthree-text pt-2">
+                            <label class="anim">
+                              <input type="checkbox" class="checkbox" required="">
+                              <span>Keep me signed in</span>
+                            </label>
+                            <div class="clear"> </div>
+                          </div>
+                          <input type="submit" value="SIGN IN">
+                        </form>
+                        <div class="text-center">
+                          <a class="text-sm text-slate-800 dark:text-slate-400 leading-6 font-medium"
+                            href="forget-password-one.html">Forgot
+                            Password?
+                          </a>
+                        </div>
+                      </div>
+                      <!-- END: Login Form -->
+                      <div class="divider">or continue with</div>
+                      <div class="max-w-[242px] mx-auto mt-8 w-full">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
-          </ol>
+                        <!-- BEGIN: Social Log in Area -->
+                        <div class="text-center">
+                          <a href="#"
+                            class="inline-flex h-10 w-10 bg-[#EA4335] text-white text-2xl flex-col items-center justify-center rounded-full">
+                            <img src="assets/img/gp.svg" alt="">
+                          </a>
+                        </div>
+                        <!-- END: Social Log In Area -->
+                      </div>
+                      <div
+                        class="md:max-w-[345px] mx-auto font-normal text-slate-500 dark:text-slate-400 mt-12 uppercase text-sm">
+                        Don’t have an account?
+                        <a href="#" id="signup-link" style="text-decoration: none;">
+                          Sign up
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-      </div>
-    </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page pt-4">
-      <div class="container">
-        <p>
-          Example inner page template
-        </p>
+        <div class="main-w3layouts wrapper" id="signup-form">
+          <div class="main-agileinfo">
+            <div class="loginwrapper">
+              <div class="lg-inner-column">
+                <div class="left-column relative z-[1]">
+                  <div class="max-w-[520px] pt-20 ltr:pl-20 rtl:pr-20">
+                    <h4>
+                      Unlock your Project
+                      <span class="text-slate-800 dark:text-slate-400 font-bold">
+                        performance
+                      </span>
+                    </h4>
+                  </div>
+                </div>
+                <div class="right-column  relative">
+                  <div class="inner-content h-full flex flex-col dark:bg-slate-800">
+                    <div class="auth-box h-full flex flex-col justify-center">
+                      <div class="text-center 2xl:mb-10 mb-4">
+                        <h4 class="font-medium">Sign UP</h4>
+                        <div class="text-slate-500 text-base">
+                          Sign in to your account to start using Dashcode
+                        </div>
+                      </div>
+                      <!-- BEGIN: Login Form -->
+                      <div class=" agileits-top">
+                        <form action="#" method="post">
+                          <div class="group">
+                            <input class="text botMar" id="username" type="text" name="Username" placeholder=""
+                              required="">
+                            <label for="username">Username</label>
+                          </div>
+                          <div class="group">
+                            <input class="text email botMar" id="email" type="email" name="email" placeholder=""
+                              required="">
+                            <label for="email">Email</label>
+                          </div>
+                          <div class="group">
+                            <input class="text botMar" id="mobile" type="text" name="mobile" placeholder="" required="">
+                            <label for="mobile">Mobile</label>
+
+                          </div>
+                          <div class="group">
+                            <input class="text" id="pass2" type="password" name="password" placeholder="" required="" />
+                            <div class="icon-container"><i class="show_pass bi bi-eye" onclick="showPass()"></i></div>
+                            <label for="pass1">Password</label>
+                          </div>
+                          <div class="group">
+                            <input class="text w3lpass" id="pass3" type="password" name="password" placeholder=""
+                              required="">
+                            <i class="show_pass bi bi-eye" onclick="showPass()"></i>
+                            <label for="pass2">Confirm Password</label>
+                          </div>
+                          <div class="wthree-text">
+                            <label class="anim">
+                              <input type="checkbox" class="checkbox" required="">
+                              <span>I agree to the <a href="">terms & conditions</a></span>
+                            </label>
+                            <div class="clear"> </div>
+                          </div>
+                          <!-- <div class="wthree-text pt-2">
+                            <label class="anim">
+                              <input type="checkbox" class="checkbox" required="">
+                              <span>Keep me signed in</span>
+                            </label>
+                            <div class="clear"> </div>
+                          </div> -->
+                          <input type="submit" value="SIGN UP">
+                        </form>
+                      </div>
+                      <!-- END: Login Form -->
+                      <div class="divider">or continue with</div>
+                      <div class="max-w-[242px] mx-auto mt-8 w-full">
+
+                        <!-- BEGIN: Social Log in Area -->
+                        <div class="text-center">
+                          <a href="#"
+                            class="inline-flex h-10 w-10 bg-[#EA4335] text-white text-2xl flex-col items-center justify-center rounded-full">
+                            <img src="assets/img/gp.svg" alt="">
+                          </a>
+                        </div>
+                        <!-- END: Social Log In Area -->
+                      </div>
+                      <div
+                        class="md:max-w-[345px] mx-auto font-normal text-slate-500 dark:text-slate-400 mt-12 uppercase text-sm">
+                        Already have an account?
+                        <a href="#" id="login-link" style="text-decoration: none;">
+                          Sign in
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- //main -->
       </div>
     </section>
 
@@ -106,7 +296,7 @@
           </div>
         </div>
         <div class="col-md-12 col-lg-4">
-          
+
         </div>
 
 
@@ -194,7 +384,8 @@
 
   </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -205,6 +396,37 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/passShow.js"></script>
+
+
+  <script>
+    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
+    const loginLink = document.getElementById('login-link');
+    const signupLink = document.getElementById('signup-link');
+
+    loginLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      signupForm.style.display = 'none';
+      loginForm.style.display = 'block';
+
+      setTimeout(() => {
+        signupForm.style.opacity = 0;
+        loginForm.style.opacity = 1;
+      }, 10);
+    });
+
+    signupLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      loginForm.style.display = 'none';
+      signupForm.style.display = 'block';
+
+      setTimeout(() => {
+        loginForm.style.opacity = 0;
+        signupForm.style.opacity = 1;
+      }, 10);
+    });
+  </script>
 
 </body>
 
